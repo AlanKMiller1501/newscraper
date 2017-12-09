@@ -1,0 +1,27 @@
+{
+  "name": "newscraper",
+  "version": "1.0.0",
+  "description": "A simple application that scrapes news outlets for the latest news",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chryssajones/newscraper.git"
+  },
+  "author": "Chryssa Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chryssajones/newscraper/issues"
+  },
+  "homepage": "https://github.com/chryssajones/newscraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.6",
+    "request": "^2.83.0"
+  }
+}
