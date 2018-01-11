@@ -6,8 +6,8 @@ html {
 body {
 	margin-bottom: 80px;
 	background-image: url("../images/paper2.jpg");
-	background-size: cover;
 }
+
 
 .footer {
 	position: absolute;
@@ -22,6 +22,7 @@ body {
 }
 
 .jumbotron {
+	background: linear-gradient (#333, black);
 	position: relative;
 	margin-top: 20px;
 	width: 100%;
@@ -32,14 +33,6 @@ body {
 	box-shadow: 10px 5px 20px 2px lightslategrey;
 }
 
-.jumbotron .overlay {
-	background: linear-gradient(#333, black);
-	position: absolute;
-	opacity: 0.7;
-	z-index: auto;
-	top: 0px;
-}
-
 .jumbotron .caption {
 	position: absolute;
 	top: 30%;
@@ -47,18 +40,15 @@ body {
 	text-align: center;
 }
 
-.jumbotron .caption h1,
-.jumbotron .caption p {
-	color: black;
-}
-
 .jumbotron h1 {
 	font-weight: 800;
 	font-size: 80px;
+	color: black;
 }
 
 .jumbotron p {
 	font-size: 30px;
+	color: black;
 }
 
 .panel {
@@ -66,15 +56,21 @@ body {
 	box-shadow: 3px 3px 20px lightslategrey;
 }
 
-.panel .panel-default .panel-heading {
+.panel-heading {
 	background-color: #2196f3;
-}
-
-.panel .panel-default .panel-heading h3 {
 	color: white;
+	padding-bottom: 10px;
 }
 
-.panel .panel-defualt .panel-body {
+h3 {
+	font-size: 18px;
+}
+
+/*.panel .panel-default .panel-heading {
+	color: white;
+}*/
+
+.panel .panel-default .panel-body {
 	font-size: 16px;
 }
 
@@ -83,7 +79,7 @@ body {
 	color: white;
 }
 
-.footer>.container>p {
+.footer .container p {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -117,16 +113,16 @@ textarea {
 	padding: 10px;
 }
 
-.bootbox-body .btn {
+.btn {
 	float: right;
-	margin: 5px;
+	/*margin: 5px;*/
 }
 
 .note .list-group-item {
 	padding: 30px;
 }
 
-.note .list-group-item .btn {
+.note .list-group-item {
 	position: relative;
 	bottom: 10px;
 }

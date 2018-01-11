@@ -21,7 +21,7 @@ module.exports = {
 	},
 	delete: function(query, cb) {
 		Headline.remove(query, cb);
-	}
+	},
 	get: function(query, cb) {
 		Headline.find(query)
 		.sort({
@@ -36,5 +36,5 @@ module.exports = {
 			$set: query
 		}, {}, cb);
 	}
-	
+
 };

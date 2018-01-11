@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	function renderArticles(articles) {
 		var articlePanels = [];
-		for (var = 0; i < articles.length, i++) {
+		for (var i = 0; i < articles.length; i++) {
 			articlePanels.push(createPanel(articles[i]));
 		}
 		articleContainer.append(articlePanels);
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 	function createPanel(article) {
 		var panel = 
-		$(["<div class='panel panel-default'>",
+		$(["<div class='panel panel-primary'>",
 			"<div class='panel-heading'>",
 			"<h3>",
 			article.headline,

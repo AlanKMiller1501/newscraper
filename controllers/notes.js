@@ -13,7 +13,7 @@ module.exports = {
 	save: function(data, cb) {
 		var newNote = {
 			_headlineId: data._id,
-			date: makeDate();
+			date: makeDate(),
 			noteText: data.noteText
 		};
 

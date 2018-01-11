@@ -9,9 +9,8 @@ var noteSchema = new Schema({
 	},
 	date: String,
 	noteText: String
-	}
-});
+	});
 
-var Note = mongooose.model("Note", noteSchema);
+var Note = mongoose.model("Note", noteSchema);
 
 module.exports = Note;
