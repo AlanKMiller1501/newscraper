@@ -94,10 +94,10 @@ $(document).ready(function() {
 
 	function handleArticleDelete() {
 		var articleToDelete = $(this).parents(".panel").data();
-		articleToSave.saved = true;
+		articleToDelete.saved = true;
 		$.ajax({
 			method: "DELETE",
-			url: "/api/headlines" + articleToDelete._id,
+			url: "/api/headlines/" + articleToDelete._id
 		}).then(function(data){
 			if (data.ok) {
 				initPage();
